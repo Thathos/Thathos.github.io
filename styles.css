@@ -1,0 +1,33 @@
+/* 1282A2 Cerulean */
+/* FEFCFB White */
+/*594236 Umber*/
+/* 3BB273 Jade*/
+
+html {
+    background: #1282a2;
+}
+
+.container {
+    background-color: #FEFCFB;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    background-color: #594236;
+    padding: 10px;
+}
+
+.abtme {
+    border: 2px black solid;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col1, .col2, .col3{
+    float: left;
+}
