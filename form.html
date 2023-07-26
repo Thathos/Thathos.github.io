@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form</title>
+    <link href="styles.css" rel="stylesheet">
+
     <!-- Author: Reginald Cole -->
 </head>
 <body>
-    
+    <header>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="form.html">Form Showcase</a>
+                <a href="table.html">Table Showcase</a>
+        </nav>
+    </header>
+
+    <h1>Form Example</h1>
+    <p>In my first semester with website development, ive learned a handful of skills. One of them is the use of the "form" element.</p>
+
+    <div class="container">
+    <h2>Form Example with GET request</h2>
+    <form method="get" action="thankyou.html">
+        <fieldset>
+            <legend>Required Text Inputs Examples</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" required placeholder="First Name">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" required placeholder="Last Name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="youremail@example.com">
+        </fieldset>
+
+        <fieldset>
+            <legend>Options, Radio, Checkboxes, and Button examples</legend>
+            <label for="options">NFC South Football Teams:</label>
+            <select name="teams" id="options">
+                <option value="saints">New Orleans Saints</option>
+                <option value="falcons">Atlanta Falcons</option>
+                <option value="panthers">Carolina Panthers</option>
+                <option value="buccs">Tampa Bay Buccaneers</option>
+            </select>
+
+            <p>What is your favorite time of the day?</p>
+            <label for="am">AM</label>
+            <input type="radio" id="am" name="tod" value="am">
+
+            <label for="pm">PM</label>
+            <input type="radio" id="pm" name="tod" value="pm">
+
+            <p>Which continents have you traveled to?</p>
+            <label for="na">North America:</label>
+            <input type="checkbox" id="na" name="na" value="na">
+
+            <label for="sa">South America:</label>
+            <input type="checkbox" id="sa" name="sa" value="sa">
+
+            <label for="asia">Asia:</label>
+            <input type="checkbox" id="asia" name="asia" value="asia">
+
+            <label for="africa">Africa:</label>
+            <input type="checkbox" id="africa" name="africa" value="africa">
+
+            <label for="ant">Antartica:</label>
+            <input type="checkbox" id="ant" name="ant" value="ant">
+
+            <label for="eu">Europe:</label>
+            <input type="checkbox" id="eu" name="eu" value="eu">
+
+            <label for="aus">Australia:</label>
+            <input type="checkbox" id="aus" name="aus" value="aus">
+
+            <p>Text area:</p>
+            <textarea id="text" name="text" rows="5" cols="50" placeholder="Type additional text in this area"></textarea>
+        </fieldset>
+
+            <input class="submit" type="submit" value="Submit">
+        
+    </form>
+    </div>
 </body>
 </html>
