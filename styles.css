@@ -2,6 +2,15 @@
 /* General Styles */
 h1, h2, h3{
     text-align: center;
+    text-decoration: underline;
+}
+
+h2 p, h1 p {
+    text-align: center;
+}
+
+html {
+    background-color: beige;
 }
 
 /* Nav Styles */
@@ -28,7 +37,7 @@ nav a {
 }
 
 nav a:hover{
-    color: blue;
+    color: white;
 }
 
 /* table styles */
